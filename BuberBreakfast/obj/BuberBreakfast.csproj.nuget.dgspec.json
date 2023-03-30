@@ -4,14 +4,14 @@
     "C:\\Users\\aco podgorac\\Desktop\\APi tutorial\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aco podgorac\\Desktop\\APi tutorial\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj": {
+    "C:\\Users\\aco podgorac\\Desktop\\APi tutorial\\BuberBreakfast\\BuberBreakfast.Contracts\\BuberBreakfast.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aco podgorac\\Desktop\\APi tutorial\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj",
-        "projectName": "BuberBreakfast",
-        "projectPath": "C:\\Users\\aco podgorac\\Desktop\\APi tutorial\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj",
+        "projectUniqueName": "C:\\Users\\aco podgorac\\Desktop\\APi tutorial\\BuberBreakfast\\BuberBreakfast.Contracts\\BuberBreakfast.Contracts.csproj",
+        "projectName": "BuberBreakfast.Contracts",
+        "projectPath": "C:\\Users\\aco podgorac\\Desktop\\APi tutorial\\BuberBreakfast\\BuberBreakfast.Contracts\\BuberBreakfast.Contracts.csproj",
         "packagesPath": "C:\\Users\\aco podgorac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aco podgorac\\Desktop\\APi tutorial\\BuberBreakfast\\BuberBreakfast\\obj\\",
+        "outputPath": "C:\\Users\\aco podgorac\\Desktop\\APi tutorial\\BuberBreakfast\\BuberBreakfast.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aco podgorac\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,12 +37,63 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\aco podgorac\\Desktop\\APi tutorial\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aco podgorac\\Desktop\\APi tutorial\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj",
+        "projectName": "BuberBreakfast",
+        "projectPath": "C:\\Users\\aco podgorac\\Desktop\\APi tutorial\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj",
+        "packagesPath": "C:\\Users\\aco podgorac\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aco podgorac\\Desktop\\APi tutorial\\BuberBreakfast\\BuberBreakfast\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\aco podgorac\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\aco podgorac\\Desktop\\APi tutorial\\BuberBreakfast\\BuberBreakfast.Contracts\\BuberBreakfast.Contracts.csproj": {
+                "projectPath": "C:\\Users\\aco podgorac\\Desktop\\APi tutorial\\BuberBreakfast\\BuberBreakfast.Contracts\\BuberBreakfast.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
