@@ -8,16 +8,59 @@ namespace Buberbreakfast.Controllers;
 [Route("[controller]")]
 public class BreakfastController : ControllerBase
 {
-    [HttpPost()]
+    private readonly IBreakfastService _breakfastService;
+
+    public BreakfastController(IBreakfastService breakfastService)
+    {
+        _breakfastService = breakfastService;
+    }
+
+    [HttpPost]
     public IActionResult CreateBreakfast(CreateBreakfastRequest request)
     {
-        return Ok (request);
+        var breakfast = new Breakfast(
+            Giud.NewGuid(),
+            request.Name,
+            request.Description,
+            request.StartDateTime,
+            request.EndDateTime,
+            DateTime.UtcNow,
+            request.Savory,
+            request.Sweet);
+
+        _breakfastService.CreateBreakfast(breakfast);
+
+        var response = new BreakfastResponse(
+            breakfast.Id,
+            breakfast.Name,
+            breakfast.Description,
+            breakfast.StartDatetime,
+            breakfast.EndDatetime,
+            breakfast.LastModifiedDateTime,
+            breakfast.Savory,
+            breakfast.Sweet);
+                    
+        return CreatedAtAction (
+            actionName: nameof(GetBreakfast),
+            routeValues: new {id = breakfast.Id },
+            value: response);
     }
 
     [HttpGet("{id:guid}")]
     public IActionResult GetBreakfast(Guid id)
     {
-        return Ok (id);
+        Breakfast breakfast = _breakfastService.GetBreakfast(id);
+        
+       var response = new BreakfastResponse(
+            breakfast.Id,
+            breakfast.Name,
+            breakfast.Description,
+            breakfast.StartDatetime,
+            breakfast.EndDatetime,
+            breakfast.LastModifiedDateTime,
+            breakfast.Savory,
+            breakfast.Sweet);
+        return Ok (response);
     }
 
     [HttpPut("{id:guid}")]
@@ -32,6 +75,17 @@ public class BreakfastController : ControllerBase
         return Ok (id);
     }
 
-    
+    private interface IBreakfastService
+    {
+        void CreateBreakfast(Breakfast breakfast);
+        Breakfast GetBreakfast(Guid id);
+    }
 
+    private class Giud
+    {
+        internal static Guid NewGuid()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

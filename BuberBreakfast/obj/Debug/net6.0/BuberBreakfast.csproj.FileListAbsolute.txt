@@ -22,3 +22,12 @@ C:\Users\aco podgorac\Desktop\APi tutorial\BuberBreakfast\BuberBreakfast\obj\Deb
 C:\Users\aco podgorac\Desktop\APi tutorial\BuberBreakfast\BuberBreakfast\obj\Debug\net6.0\BuberBreakfast.pdb
 C:\Users\aco podgorac\Desktop\APi tutorial\BuberBreakfast\BuberBreakfast\obj\Debug\net6.0\BuberBreakfast.genruntimeconfig.cache
 C:\Users\aco podgorac\Desktop\APi tutorial\BuberBreakfast\BuberBreakfast\obj\Debug\net6.0\ref\BuberBreakfast.dll
+C:\Users\aco podgorac\OneDrive\Desktop\api tuto\BuberBreakfast\BuberBreakfast\obj\Debug\net6.0\BuberBreakfast.csproj.AssemblyReference.cache
+C:\Users\aco podgorac\OneDrive\Desktop\api tuto\BuberBreakfast\BuberBreakfast\obj\Debug\net6.0\BuberBreakfast.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aco podgorac\OneDrive\Desktop\api tuto\BuberBreakfast\BuberBreakfast\obj\Debug\net6.0\BuberBreakfast.AssemblyInfoInputs.cache
+C:\Users\aco podgorac\OneDrive\Desktop\api tuto\BuberBreakfast\BuberBreakfast\obj\Debug\net6.0\BuberBreakfast.AssemblyInfo.cs
+C:\Users\aco podgorac\OneDrive\Desktop\api tuto\BuberBreakfast\BuberBreakfast\obj\Debug\net6.0\BuberBreakfast.csproj.CoreCompileInputs.cache
+C:\Users\aco podgorac\OneDrive\Desktop\api tuto\BuberBreakfast\BuberBreakfast\obj\Debug\net6.0\BuberBreakfast.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aco podgorac\OneDrive\Desktop\api tuto\BuberBreakfast\BuberBreakfast\obj\Debug\net6.0\BuberBreakfast.dll
+C:\Users\aco podgorac\OneDrive\Desktop\api tuto\BuberBreakfast\BuberBreakfast\obj\Debug\net6.0\refint\BuberBreakfast.dll
+C:\Users\aco podgorac\OneDrive\Desktop\api tuto\BuberBreakfast\BuberBreakfast\obj\Debug\net6.0\BuberBreakfast.pdb
