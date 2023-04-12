@@ -1,5 +1,6 @@
-
 using Microsoft.AspNetCore.Mvc;
+using Buberbreakfast.Service.Breakfasts;
+using Buberbreakfast.Service;
 
 
 namespace Buberbreakfast.Controllers;
@@ -10,7 +11,7 @@ public class BreakfastController : ControllerBase
 {
     private readonly IBreakfastService _breakfastService;
 
-    public BreakfastController(IBreakfastService breakfastService)
+    private BreakfastController(IBreakfastService breakfastService)
     {
         _breakfastService = breakfastService;
     }
@@ -19,7 +20,7 @@ public class BreakfastController : ControllerBase
     public IActionResult CreateBreakfast(CreateBreakfastRequest request)
     {
         var breakfast = new Breakfast(
-            Giud.NewGuid(),
+            Guid.NewGuid(),
             request.Name,
             request.Description,
             request.StartDateTime,
