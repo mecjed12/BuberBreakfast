@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Buberbreakfast.Service.Breakfasts;
 using Buberbreakfast.Service;
-
+using Buberbreakfast.ServiceError;
+using ErrorOr;
 
 namespace Buberbreakfast.Controllers;
 
@@ -11,7 +12,7 @@ public class BreakfastController : ControllerBase
 {
     private readonly IBreakfastService _breakfastService;
 
-    private BreakfastController(IBreakfastService breakfastService)
+    public BreakfastController(IBreakfastService breakfastService)
     {
         _breakfastService = breakfastService;
     }
@@ -50,9 +51,24 @@ public class BreakfastController : ControllerBase
     [HttpGet("{id:guid}")]
     public IActionResult GetBreakfast(Guid id)
     {
-        Breakfast breakfast = _breakfastService.GetBreakfast(id);
+        ErrorOr<Breakfast> getBreakFastResult = _breakfastService.GetBreakfast(id);
+
+        if(getBreakFastResult.IsError &&
+         getBreakFastResult.FirstError == Errors.Breakfast.NotFound)
+        {
+            return NotFound();
+        }
         
-       var response = new BreakfastResponse(
+       var breakfast = getBreakFastResult.Value;
+
+       BreakfastResponse response = MapBreakfastResponse(breakfast);
+       
+       return Ok (response);
+    }
+
+    private static BreakfastResponse MapBreakfastResponse(Breakfast breakfast)
+    {
+        return new BreakfastResponse(
             breakfast.Id,
             breakfast.Name,
             breakfast.Description,
@@ -60,27 +76,35 @@ public class BreakfastController : ControllerBase
             breakfast.EndDatetime,
             breakfast.LastModifiedDateTime,
             breakfast.Savory,
-            breakfast.Sweet);
-        return Ok (response);
+            breakfast.Sweet
+        );
     }
 
     [HttpPut("{id:guid}")]
     public IActionResult UpsertBreakfast(Guid id, UpsertBreakfastRequest request)
     {
-        return Ok (request);
+        var breakfast = new Breakfast(
+            id,
+            request.Name,
+            request.Description,
+            request.StartDateTime,
+            request.EndDateTime,
+            DateTime.UtcNow,
+            request.Savory,
+            request.Sweet);
+
+        _breakfastService.UpsertBreakfast(breakfast);
+        return NoContent();
     }
 
     [HttpDelete()]
     public IActionResult DeleteBreakfsat(Guid id)
     {
-        return Ok (id);
+        _breakfastService.DeleteBreakfast(id);
+        return NoContent() ;
     }
 
-    private interface IBreakfastService
-    {
-        void CreateBreakfast(Breakfast breakfast);
-        Breakfast GetBreakfast(Guid id);
-    }
+   
 
     private class Giud
     {

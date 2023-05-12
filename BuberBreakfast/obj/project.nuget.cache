@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7iQc+smrMMFAF1PykgfeJJJM7T7XcI/KCgFo2cSf2H1SonSOH5RKNf/8qm+AgRMobBSdHBQqMvOEukIdp9HKlQ==",
+  "dgSpecHash": "+/v0Q9Fr5Tr73ng3oSvcJDvQh+O7B0LJ8dS8M2va5m2MrhQe+dqNc0mFdLVcXNflV0xzRJGzBMc5/cS92xATOw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\api tuto\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\Projects\\APi tutorial\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aco podgorac\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512"
+  ],
   "logs": []
 }

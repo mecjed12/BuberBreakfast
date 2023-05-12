@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\api tuto\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj": {}
+    "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\Projects\\APi tutorial\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\api tuto\\BuberBreakfast\\BuberBreakfast.Contracts\\BuberBreakfast.Contracts.csproj": {
+    "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\Projects\\APi tutorial\\BuberBreakfast\\BuberBreakfast.Contracts\\BuberBreakfast.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\api tuto\\BuberBreakfast\\BuberBreakfast.Contracts\\BuberBreakfast.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\Projects\\APi tutorial\\BuberBreakfast\\BuberBreakfast.Contracts\\BuberBreakfast.Contracts.csproj",
         "projectName": "BuberBreakfast.Contracts",
-        "projectPath": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\api tuto\\BuberBreakfast\\BuberBreakfast.Contracts\\BuberBreakfast.Contracts.csproj",
+        "projectPath": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\Projects\\APi tutorial\\BuberBreakfast\\BuberBreakfast.Contracts\\BuberBreakfast.Contracts.csproj",
         "packagesPath": "C:\\Users\\aco podgorac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\api tuto\\BuberBreakfast\\BuberBreakfast.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\Projects\\APi tutorial\\BuberBreakfast\\BuberBreakfast.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aco podgorac\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\aco podgorac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,34 +55,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\api tuto\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj": {
+    "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\Projects\\APi tutorial\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\api tuto\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj",
+        "projectUniqueName": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\Projects\\APi tutorial\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj",
         "projectName": "BuberBreakfast",
-        "projectPath": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\api tuto\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj",
+        "projectPath": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\Projects\\APi tutorial\\BuberBreakfast\\BuberBreakfast\\BuberBreakfast.csproj",
         "packagesPath": "C:\\Users\\aco podgorac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\api tuto\\BuberBreakfast\\BuberBreakfast\\obj\\",
+        "outputPath": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\Projects\\APi tutorial\\BuberBreakfast\\BuberBreakfast\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aco podgorac\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\aco podgorac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\api tuto\\BuberBreakfast\\BuberBreakfast.Contracts\\BuberBreakfast.Contracts.csproj": {
-                "projectPath": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\api tuto\\BuberBreakfast\\BuberBreakfast.Contracts\\BuberBreakfast.Contracts.csproj"
+              "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\Projects\\APi tutorial\\BuberBreakfast\\BuberBreakfast.Contracts\\BuberBreakfast.Contracts.csproj": {
+                "projectPath": "C:\\Users\\aco podgorac\\OneDrive\\Desktop\\Projects\\APi tutorial\\BuberBreakfast\\BuberBreakfast.Contracts\\BuberBreakfast.Contracts.csproj"
               }
             }
           }
@@ -94,6 +98,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "ErrorOr": {
+              "target": "Package",
+              "version": "[1.2.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -113,7 +123,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

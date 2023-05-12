@@ -2,14 +2,14 @@ using System;
 
 public class Breakfast
 {
-    public Guid Id { get; set; }
-    public string Name { get; set; }
-    public string Description { get; set; }
-    public DateTime StartDatetime { get; set; }
-    public DateTime EndDatetime { get; set; }
-    public DateTime LastModifiedDateTime { get; set; }
-    public List<string> Savory { get; set; }
-    public List<string> Sweet { get; set; }
+    public Guid Id { get;  }
+    public string Name { get;  }
+    public string Description { get; }
+    public DateTime StartDatetime { get; }
+    public DateTime EndDatetime { get; }
+    public DateTime LastModifiedDateTime { get; }
+    public List<string> Savory { get; }
+    public List<string> Sweet { get; }
 
     public Breakfast (Guid id, string name, string description, DateTime startDatetime, DateTime endDatetime, DateTime lastModifiedDateTime, List<string> savory, List<string> sweet)
     {
